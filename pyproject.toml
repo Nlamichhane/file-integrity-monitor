@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "file-integrity-monitor"
+version = "0.1.0"
+description = "Simple file integrity monitor (FIM) with baseline, scan, and watch modes."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{name = "Nishan Lamichhane"}]
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+fim = "fim.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

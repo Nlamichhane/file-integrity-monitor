@@ -1,0 +1,16 @@
+{
+  "paths": [
+    "./"
+  ],
+  "excludes": [
+    "__pycache__/*",
+    "*.pyc",
+    ".git/*",
+    "state/*",
+    "logs/*",
+    ".venv/*"
+  ],
+  "algorithm": "sha256",
+  "follow_symlinks": false,
+  "ignore_hidden": true
+}
