@@ -21,7 +21,7 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install -e .
 
 # 3) Initialize a baseline from example config
-fim baseline --config examples/config.json --baseline state/baseline.json
+fim --config examples/config.json --baseline state/baseline.json baseline
 
 # 4) Scan later to detect changes
 fim scan --config examples/config.json --baseline state/baseline.json
